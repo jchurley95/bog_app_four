@@ -3,6 +3,7 @@ class CreaturesController < ApplicationController
   end
 
   def index
+    @creatures = Creature.all
   end
 
   def edit
