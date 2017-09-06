@@ -2,6 +2,10 @@
 
 <%= render "partials/creature_form", creature: @creature%>
 
+<%= link_to creature_path(@creature), method: :delete, data: {confirm: "Are you sure?"} do %>
+<div><button>Delete <%=@creature.name%></div></button>
+<% end %>
+
 <hr />
 
 <%= link_to creatures_path do %>
