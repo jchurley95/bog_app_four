@@ -2,7 +2,7 @@
 
 <% @creatures.each do |creature|%>
     <div>
-        <label>Name:</label> <%= creature.name%>
+        <label>Name:</label> <%= link_to "#{creature.name}", creature_path(creature)%>
         <br />
         <label>Description:</label> <%= creature.description%>
     </div>

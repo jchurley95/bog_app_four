@@ -1,2 +1,6 @@
 <h1><%= @creature.name%></h1>
-<p><%= @creature.description%></p>
+<p>"<%= @creature.description%>"</p>
+
+<%= link_to edit_creature_path do %>
+<div><button>Edit <%= @creature.name%></div></button>
+<% end %>
